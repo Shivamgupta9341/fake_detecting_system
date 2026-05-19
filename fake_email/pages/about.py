@@ -1,15 +1,6 @@
 import streamlit as st
 
 
-st.markdown("""
-<style>
-
-.stApp {
-    background: linear-gradient(to right, #141e30, #243b55);
-}
-
-</style>
-""", unsafe_allow_html=True)
 
 
 st.title("About Us")
