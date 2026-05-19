@@ -16,9 +16,7 @@ st.markdown("""
 
 
 # MongoDB Connection
-myclient = pymongo.MongoClient(
-    "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.2"
-)
+myclient = pymongo.MongoClient("mongodb+srv://shivam:Shivam#123@cluster0.phjbab5.mongodb.net/?appName=Cluster0")
 
 mydb = myclient["mydatabase"]
 my = mydb["user_info"]
