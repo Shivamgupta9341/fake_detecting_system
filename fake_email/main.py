@@ -16,7 +16,7 @@ st.markdown("""
 st.title("Fake Email Detecting System")
 
 
-#st.image("images/img1.jpeg")
+st.image("images/img1.jpeg")
 
 st.header("Introduction")
 st.write("Detects fake and phishing emails to protect users from fraud.")
