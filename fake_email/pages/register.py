@@ -4,16 +4,6 @@ myclient = pymongo.MongoClient("mongodb+srv://shivam:Shivam#123@cluster0.phjbab5
 mydb = myclient["mydatabase"]
 my=mydb["user_info"]
 
-st.markdown("""
-<style>
-
-.stApp {
-    background: linear-gradient(to right, #141e30, #243b55);
-}
-
-</style>
-""", unsafe_allow_html=True)
-
 
 
 
