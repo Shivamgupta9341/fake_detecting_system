@@ -39,15 +39,6 @@ def download_nltk():
 download_nltk()
 
 
-st.markdown("""
-<style>
-
-.stApp {
-    background: linear-gradient(to right, #141e30, #243b55);
-}
-
-</style>
-""", unsafe_allow_html=True)
 
 
 
