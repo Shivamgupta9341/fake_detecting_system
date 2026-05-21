@@ -31,8 +31,9 @@ if b1:
               
               my.insert_one({"name":name,"password":password, "gender":g,"Email":email,"dob":str(dob)})
               st.success("Your data are saved!!")
-              st.switch_page("pages/profile.py")
-
+              for data in str:
+                     st.session_state["name"]=data['name']
+                     st.switch_page("pages/profile.py")
 
 
 
