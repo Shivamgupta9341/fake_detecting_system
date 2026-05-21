@@ -19,11 +19,12 @@ c1, c2, c3,c4 = st.columns(4)
 
 
 if 'name' not in st.session_state:
+    
     st.session_state['name'] = ""
+    if st.session_state.get("login") != True:
+            st.warning("Please Login First")
+            st.switch_page("pages/login.py")
 name = st.session_state['name']
-if "name" not in st.session_state or not st.session_state.get("login"):
-    st.warning("Please login first.")
-    st.switch_page("pages/login.py")
 #st.success(f"Welcome : {name}")
 
 st.markdown(f"""
