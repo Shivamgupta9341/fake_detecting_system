@@ -28,14 +28,15 @@ if b1:
               st.error("Username already exists")
 
        else:
-              
-              my.insert_one({"name":name,"password":password, "gender":g,"Email":email,"dob":str(dob)})
-              st.success("Your data are saved!!")
+              str=my.find({"name":name})
               for data in str:
                      st.session_state["name"]=data['name']
                      st.switch_page("pages/profile.py")
 
 
+              my.insert_one({"name":name,"password":password, "gender":g,"Email":email,"dob":str(dob)})
+              st.success("Your data are saved!!")
+             
 
 
 
