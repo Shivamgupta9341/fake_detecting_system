@@ -30,6 +30,9 @@ name = st.session_state["name"]
 if 'name' not in st.session_state:
     st.session_state['name'] = ""
 name = st.session_state['name']
+if "name" not in st.session_state or not st.session_state.get("login"):
+    st.warning("Please login first.")
+    st.switch_page("pages/login.py")
 #st.success(f"Welcome : {name}")
 
 st.markdown(f"""
