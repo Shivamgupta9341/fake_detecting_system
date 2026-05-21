@@ -20,11 +20,10 @@ c1, c2, c3,c4 = st.columns(4)
 
 
 # Session State
-if 'name' not in st.session_state:
-    st.session_state['name'] = ""
-    if st.session_state.get("login") != True:
-            st.warning("Please Login First")
-            st.switch_page("pages/login.py")
+if "name" not in st.session_state or not st.session_state.get("login"):
+    st.warning("Please login first.")
+    st.switch_page("pages/login.py")
+    
 
 if 'name' not in st.session_state:
     st.session_state['name'] = ""
