@@ -17,13 +17,15 @@ my = mydb["user_info"]
 
 c1, c2, c3,c4 = st.columns(4)
 
+if 'name' not in st.session_state:
+
+    st.warning("Please Login First")
+
+    st.switch_page("pages/login.py")
 
 if 'name' not in st.session_state:
     
     st.session_state['name'] = ""
-    if st.session_state.get("login") != True:
-            st.warning("Please Login First")
-            st.switch_page("pages/login.py")
 name = st.session_state['name']
 #st.success(f"Welcome : {name}")
 
